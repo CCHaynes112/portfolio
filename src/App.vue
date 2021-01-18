@@ -11,7 +11,7 @@
         <div class="icon-container">
           <v-tooltip bottom>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn icon href="CCHaynes1122@gmail.com">
+              <v-btn icon href="mailto:CCHaynes1122@gmail.com">
                 <v-icon x-large color="white" v-bind="attrs" v-on="on"
                   >mdi-email</v-icon
                 >
