@@ -10,6 +10,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'LdfComicSans';
+            src: url('fonts/Ldfcomicsans-jj7l.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         #stylesheet-btn {
             margin-top: 200px !important;
             width: 200px;
@@ -274,9 +281,9 @@
             var subtitle = document.querySelector('.subtitle-text');
             var marquee = document.querySelector('.technologies-marquee');
 
-            title.style.fontFamily = 'Comic Sans MS';
-            subtitle.style.fontFamily = 'Comic Sans MS';
-            marquee.style.fontFamily = 'Comic Sans MS';
+            title.style.fontFamily = 'LdfComicSans';
+            subtitle.style.fontFamily = 'LdfComicSans';
+            marquee.style.fontFamily = 'LdfComicSans';
         }
 
         function clearFont() {
