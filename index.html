@@ -160,6 +160,7 @@
                 populateFooter();
                 changeSubtitleTextGeo();
                 showBottomImages();
+                changeFont();
                 return;
             }
             currentSheet.href = href1;
@@ -169,6 +170,7 @@
             clearFooter();
             changeSubtitleTextRegular();
             hideBottomImages();
+            clearFont();
         }
 
         function populateMarquee() {
@@ -265,6 +267,26 @@
         function hideBottomImages() {
             var bottomContent = document.querySelector('.bottom-content');
             bottomContent.style.display = 'none';
+        }
+
+        function changeFont() {
+            var title = document.querySelector('.title-text');
+            var subtitle = document.querySelector('.subtitle-text');
+            var marquee = document.querySelector('.technologies-marquee');
+
+            title.style.fontFamily = 'Comic Sans MS';
+            subtitle.style.fontFamily = 'Comic Sans MS';
+            marquee.style.fontFamily = 'Comic Sans MS';
+        }
+
+        function clearFont() {
+            var title = document.querySelector('.title-text');
+            var subtitle = document.querySelector('.subtitle-text');
+            var marquee = document.querySelector('.technologies-marquee');
+
+            title.style.fontFamily = 'unset';
+            subtitle.style.fontFamily = 'unset';
+            marquee.style.fontFamily = 'unset';
         }
 
     </script>
